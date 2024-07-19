@@ -1,0 +1,51 @@
+{
+  "id": "ddb18018-4ad8-4e2f-aac1-2bb4a5abbb98",
+  "name": "pre-atlas",
+  "values": [
+    {
+      "key": "envSubdomain",
+      "value": "https://pre.",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "tokenUrl",
+      "value": "atlas-keycloak.kapitalbank.az/auth/realms/Atlas/protocol/openid-connect/token",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "client_secret",
+      "value": "tLhi2Bx7gPG898xxu1bpOPIqhPVLcKaw",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "client_id",
+      "value": "qa-developers",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "grant_type",
+      "value": "client_credentials",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "scope",
+      "value": "openid",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "accessToken",
+      "value": "",
+      "type": "secret",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2024-07-19T13:28:58.891Z",
+  "_postman_exported_using": "Postman/11.4.0"
+}
