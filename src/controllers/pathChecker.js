@@ -1,4 +1,4 @@
-function checkIsArray(fileDirectories) {
+function checkPath(fileDirectories) {
   try {
     if (!fileDirectories.includes(",")) {
       array = [fileDirectories];
@@ -6,7 +6,7 @@ function checkIsArray(fileDirectories) {
       array = fileDirectories.split(",");
     }
 
-    console.log("Data types checked successfully");
+    console.log("Path are correct");
     return array;
   } catch (e) {
     console.log(
@@ -16,4 +16,4 @@ function checkIsArray(fileDirectories) {
   }
 }
 
-module.exports = checkIsArray;
+module.exports = checkPath;

@@ -9,6 +9,5 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cli-progress": "^3.12.0"
   }
 }
