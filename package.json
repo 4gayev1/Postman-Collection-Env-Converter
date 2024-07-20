@@ -1,7 +1,8 @@
 {
-  "name": "alma",
+  "name": "pmconverter",
   "version": "1.0.0",
-  "description": "",
+  "description": "By specifying the paths of your collection and environment JSON files, you can update your Postman Collection environments",
+  "git repository":"https://github.com/4gayev1/PostmanCollectionEnvChanger",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
