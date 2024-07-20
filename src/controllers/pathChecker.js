@@ -6,7 +6,7 @@ function checkPath(fileDirectories) {
       array = fileDirectories.split(",");
     }
 
-    console.log("Path are correct");
+    console.log("Paths are correct");
     return array;
   } catch (e) {
     console.log(

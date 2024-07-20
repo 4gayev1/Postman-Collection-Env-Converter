@@ -1,4 +1,4 @@
-function matchValues(envVal, collectionVar) {
+function matchValues(envVal, collectionVar, collectionJson) {
   try {
     for (val of envVal) {
       let found = false;
@@ -17,8 +17,10 @@ function matchValues(envVal, collectionVar) {
       }
     }
 
+    collectionJson.variable = collectionVar;
+
     console.log("Variables and values has been matched successfully");
-    return collectionVar;
+    return collectionJson;
   } catch (e) {
     console.log(
       "Something went wrong in valueMatcher -->",

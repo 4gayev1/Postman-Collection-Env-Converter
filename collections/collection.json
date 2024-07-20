@@ -52,7 +52,7 @@
             },
             "url": {
               "raw": "{{envSubdomain}}{{baseURL}}/api/card-customer/customers/search",
-              "host": ["{{envSubdomain}}{{baseURL}}"],
+              "host": ["{{alma}}{{armud}}"],
               "path": ["api", "card-customer", "customers", "search"]
             }
           },
@@ -101,7 +101,7 @@
             },
             "url": {
               "raw": "{{envSubdomain}}{{baseURL}}/api/card-accounts",
-              "host": ["{{envSubdomain}}{{baseURL}}"],
+              "host": ["{{banan}}{{sdfdsfsdf}}"],
               "path": ["api", "card-accounts"]
             }
           },
@@ -156,7 +156,7 @@
             },
             "url": {
               "raw": "{{envSubdomain}}{{baseURL}}/api/cards?async=false",
-              "host": ["{{envSubdomain}}{{baseURL}}"],
+              "host": ["{{sdfsdfsdf}}{{sdfsdfsdfdsf}}"],
               "path": ["api", "cards"],
               "query": [{ "key": "async", "value": "false" }]
             }
@@ -202,7 +202,7 @@
             ],
             "url": {
               "raw": "{{envSubdomain}}{{baseURL}}/api/cards/{{uid}}?resultType=ACCOUNT",
-              "host": ["{{envSubdomain}}{{baseURL}}"],
+              "host": ["{{sdfsdfsdfs}}{{basdfsdfsdfseURL}}"],
               "path": ["api", "cards", "{{uid}}"],
               "query": [{ "key": "resultType", "value": "ACCOUNT" }]
             }

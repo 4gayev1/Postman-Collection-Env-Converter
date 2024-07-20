@@ -1,9 +1,7 @@
 const fs = require("fs");
 
-function writeFile(directory, collectionJson, variables) {
+function writeFile(directory, collectionJson) {
   try {
-    collectionJson.variable = variables;
-
     fs.writeFileSync(directory, JSON.stringify(collectionJson));
 
     console.log(
