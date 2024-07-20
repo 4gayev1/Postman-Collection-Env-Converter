@@ -5,15 +5,16 @@ const writeFile = require("../controllers/fileWriter");
 const makePath = require("../controllers/pathMaker");
 const changeCollectionUrls = require("../controllers/urlChanger");
 
-function runner(fileDirectories) {
+function runner(fileDirs) {
   try {
-    const envDirectories = checkPath(fileDirectories[1]);
-    const collectionDirectories = checkPath(fileDirectories[0]);
+    const dirs = checkPath(fileDirs);
+    const envDirs = dirs.endDirs;
+    const collectionDirs = dirs.collectionDirs;
 
-    for (i in envDirectories) {
-      for (j in collectionDirectories) {
-        const envJson = readFile(envDirectories[i]);
-        const collectionJson = readFile(collectionDirectories[j]);
+    for (i in envDirs) {
+      for (j in collectionDirs) {
+        const envJson = readFile(envDirs[i]);
+        const collectionJson = readFile(collectionDirs[j]);
 
         const modifiedJson = matchValues(
           envJson.values,
@@ -21,17 +22,14 @@ function runner(fileDirectories) {
           collectionJson,
         );
 
-        const modifiedCollectionPath = makePath(
-          envDirectories[i],
-          collectionDirectories[j],
-        );
+        const modifiedCollectionPath = makePath(envDirs[i], collectionDirs[j]);
 
         const modifiedCollectionJson = changeCollectionUrls(modifiedJson);
 
         writeFile(modifiedCollectionPath, modifiedCollectionJson);
       }
     }
-    console.log("Everything went well\n");
+    console.log("All collections has been converted successfully");
   } catch (e) {
     console.log("Something went wrong in Runner", e.message);
   }

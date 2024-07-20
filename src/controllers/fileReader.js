@@ -4,8 +4,7 @@ function readFile(directory) {
   try {
     const jsonData = JSON.parse(fs.readFileSync(directory, "utf8"));
 
-    console.log("File written successfully");
-
+    console.log("File read successfully");
     return jsonData;
   } catch (e) {
     console.log(
