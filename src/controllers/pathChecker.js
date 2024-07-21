@@ -16,10 +16,12 @@ function checkPath(fileDirs) {
         } else {
           const filesPaths = readPath(fileDir);
           filesPaths.map((filePath) =>
-            pathArray.push(`${fileDir}/${filePath}`),
+           { if(filePath.split("/")[filePath.split("/").length-1].includes("json")){pathArray.push(`${fileDir}/${filePath}`)} 
+          }
           );
         }
       });
+
       return pathArray;
     }
 
