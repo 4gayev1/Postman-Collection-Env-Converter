@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "bin": {
-    "balqabaq": "./index.js"
+    "pmconvert": "./index.js"
   },
   "scripts": {
     "start": "node index.js",
