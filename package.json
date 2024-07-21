@@ -1,9 +1,16 @@
+#!/usr/bin/env node
 {
-  "name": "armud",
+  "name": "balqabaq",
   "version": "1.0.0",
   "description": "By specifying the paths of your collection and environment JSON files, you can update your Postman Collection environments",
-  "git repository":"https://github.com/4gayev1/PostmanCollectionEnvChanger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4gayev1/PostmanCollectionEnvChanger"
+  },
   "main": "index.js",
+  "bin": {
+    "balqabaq": "./index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,3 +19,4 @@
   "license": "ISC",
   "dependencies": {}
 }
+
