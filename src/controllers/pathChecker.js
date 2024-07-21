@@ -10,7 +10,6 @@ function checkPath(fileDirs) {
     function definePath(fileDirs) {
       fileDirs.map((fileDir) => {
         const pathElements = fileDir.split("/");
-        console.log(pathElements);
 
         if (pathElements[pathElements.length - 1].includes("json")) {
           pathArray.push(fileDir);
