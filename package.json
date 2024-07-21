@@ -1,6 +1,5 @@
-#!/usr/bin/env node
 {
-  "name": "balqabaq",
+  "name": "pmconverter",
   "version": "1.0.0",
   "description": "By specifying the paths of your collection and environment JSON files, you can update your Postman Collection environments",
   "repository": {
