@@ -14,6 +14,8 @@ You can mention:
 # Usage:<br/>
 To use the package, first, you need to install it by running the command:
 
+<i>You have to name your environment subdomain as envSubdomain, base URL as a baseUrl, and if you are using  API to generate a token then have to name it as tokenUrl</i>
+
 ```
 npm i -g pmconverter
 ```
