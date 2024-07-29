@@ -9,7 +9,7 @@ You can mention:
 **You can also put all of them in one or separate folders and mention folder directories.**
 
 **The order of the paths (collection and environment or folder) does not matter.**<br/><br/>
-<i>Keep in mind: You have to name your environment subdomain as envSubdomain, base URL as a baseUrl, and if you are using  API to generate a token then have to name it as tokenUrl</i>
+<i>Keep in mind: You have to name your environment subdomain as envSubdomain, base URL as a baseUrl, and if you are using  API to generate a token then have to name it as tokenUrl and token as a accessToken</i>
 <br/>
 <br/>
 # Usage:<br/>
