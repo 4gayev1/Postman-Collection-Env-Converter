@@ -1,4 +1,13 @@
 function changeCollectionUrls(collectionJson) {
+
+  function requestModifier(urlData){
+    const urlParts = urlData.raw.split("/");
+    const path = "/" + urlParts.slice(3).join("/");
+
+    urlData.raw = `{{envSubdomain}}{{baseUrl}}${path}`;
+    urlData.host = ["{{envSubdomain}}{{baseUrl}}"];
+  }
+
   try {
     function changeUrls(requests) {
       if (requests.item) {
@@ -6,20 +15,10 @@ function changeCollectionUrls(collectionJson) {
       } else {
         if (Array.isArray(requests)) {
           requests.map((request) => {
-            const urlData = request.request.url;
-            const urlParts = urlData.raw.split("/");
-            const path = "/" + urlParts.slice(3).join("/");
-
-            urlData.raw = `{{envSubdomain}}{{baseURL}}${path}`;
-            urlData.host = ["{{envSubdomain}}{{baseURL}}"];
+            requestModifier(request.request.url);
           });
         } else {
-          const urlData = requests.request.url;
-          const urlParts = urlData.raw.split("/");
-          const path = "/" + urlParts.slice(3).join("/");
-
-          urlData.raw = `{{envSubdomain}}{{baseURL}}${path}`;
-          urlData.host = ["{{envSubdomain}}{{baseURL}}"];
+          requestModifier(requests.request.url);
         }
       }
     }
